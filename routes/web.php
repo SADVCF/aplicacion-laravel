@@ -18,7 +18,10 @@ Route::get('/', function () {
     return view('principal');
 });
 
-Route::get('/crear-cuenta',[registerControl::class, 'index']);
+Route::get('/ruta-nombrada',[registerControl::class, 'index'])->name('register');
+
+Route::post('/ruta-nombrada',[registerControl::class, 'store']);
+
 
 
 

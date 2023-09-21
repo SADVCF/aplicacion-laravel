@@ -17,12 +17,12 @@
 
         <div class="container mx-auto flex justify-between items-center ">
             <h1 class="text-3xl font-black">
-                DevsTagram
+                Instragram Fake
             </h1>
 
             <nav class="flex gap-2 items-center">
                 <a href class="font-bold uppercase text-gray-600 text-sm">Login</a>
-                <a href="/crear-cuenta" class="font-bold uppercase text-gray-600 text-sm">Crear cuenta</a>
+                <a href="{{route('register')}}" class="font-bold uppercase text-gray-600 text-sm">Crear cuenta</a>
             </nav>
         </div>
         
@@ -36,7 +36,7 @@
         </main>
 
         <footer class="text-center p-5 text-gray-500 font-bold uppercase">
-            DevStagram - Todos los derechos reservados - 
+            Instragram Fake - Todos los derechos reservados - 
             {{now()->year}}
             - AmunT
                 
