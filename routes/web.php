@@ -22,9 +22,9 @@ Route::get('/', function () {
     return view('principal');
 });
 
-Route::get('/ruta-nombrada',[registerControl::class, 'index'])->name('register');
+Route::get('/register',[registerControl::class, 'index'])->name('register');
 
-Route::post('/ruta-nombrada',[registerControl::class, 'store']);
+Route::post('/register',[registerControl::class, 'store']);
 
 Route::get('/login',[LoginController::class,'index'])->name('login');
 Route::post('/login',[LoginController::class,'store']);
